@@ -26,167 +26,167 @@
       "rotation": 0
     },
     "leader_center": {
-      "x": 0.6179,
-      "y": 0.0,
+      "x": 0.5943,
+      "y": -0.0,
       "rotation": 0
     },
     "flagnote-1-leader_dest": {
-      "x": 0.6179,
-      "y": 0.4205,
+      "x": 0.5943,
+      "y": 0.315,
       "rotation": 0
     },
     "flagnote-1": {
-      "x": 0.6179,
+      "x": 0.5943,
       "y": 2.8202,
       "rotation": 0
     },
     "flagnote-2-leader_dest": {
-      "x": 0.7306,
-      "y": 0.4205,
+      "x": 0.6787,
+      "y": 0.315,
       "rotation": 0
     },
     "flagnote-2": {
-      "x": 1.3479,
+      "x": 1.3243,
       "y": 2.7241,
       "rotation": 0
     },
     "flagnote-3-leader_dest": {
-      "x": 0.5052,
-      "y": 0.4205,
+      "x": 0.5099,
+      "y": 0.315,
       "rotation": 0
     },
     "flagnote-3": {
-      "x": -0.112,
+      "x": -0.1356,
       "y": 2.7241,
       "rotation": 0
     },
     "flagnote-4-leader_dest": {
-      "x": 0.8607,
-      "y": 0.4205,
+      "x": 0.7762,
+      "y": 0.315,
       "rotation": 0
     },
     "flagnote-4": {
-      "x": 2.028,
+      "x": 2.0045,
       "y": 2.4424,
       "rotation": 0
     },
     "flagnote-5-leader_dest": {
-      "x": 0.3751,
-      "y": 0.4205,
+      "x": 0.4125,
+      "y": 0.315,
       "rotation": 0
     },
     "flagnote-5": {
-      "x": -0.7922,
+      "x": -0.8158,
       "y": 2.4424,
       "rotation": 0
     },
     "flagnote-6-leader_dest": {
-      "x": 1.1979,
+      "x": 1.1743,
       "y": 0.58,
       "rotation": 0
     },
     "flagnote-6": {
-      "x": 2.6121,
+      "x": 2.5885,
       "y": 1.9942,
       "rotation": 0
     },
     "flagnote-7-leader_dest": {
-      "x": 0.1974,
-      "y": 0.4205,
+      "x": 0.2793,
+      "y": 0.315,
       "rotation": 0
     },
     "flagnote-7": {
-      "x": -1.3763,
+      "x": -1.3999,
       "y": 1.9942,
       "rotation": 0
     },
     "flagnote-8-leader_dest": {
-      "x": 1.1979,
+      "x": 1.1743,
       "y": -0.58,
       "rotation": 0
     },
     "flagnote-8": {
-      "x": 2.6121,
+      "x": 2.5885,
       "y": -1.9942,
       "rotation": 0
     },
     "flagnote-9-leader_dest": {
-      "x": 0.0613,
-      "y": 0.3214,
+      "x": 0.0487,
+      "y": 0.315,
       "rotation": 0
     },
     "flagnote-9": {
-      "x": -1.8245,
+      "x": -1.8481,
       "y": 1.4101,
       "rotation": 0
     },
     "flagnote-10-leader_dest": {
-      "x": 0.8607,
-      "y": -0.4205,
+      "x": 0.7762,
+      "y": -0.315,
       "rotation": 0
     },
     "flagnote-10": {
-      "x": 2.028,
+      "x": 2.0045,
       "y": -2.4424,
       "rotation": 0
     },
     "flagnote-11-leader_dest": {
-      "x": 0.0613,
-      "y": -0.3214,
+      "x": 0.0487,
+      "y": -0.315,
       "rotation": 0
     },
     "flagnote-11": {
-      "x": -1.8245,
+      "x": -1.8481,
       "y": -1.4101,
       "rotation": 0
     },
     "flagnote-12-leader_dest": {
-      "x": 0.7306,
-      "y": -0.4205,
+      "x": 0.6787,
+      "y": -0.315,
       "rotation": 0
     },
     "flagnote-12": {
-      "x": 1.3479,
+      "x": 1.3243,
       "y": -2.7241,
       "rotation": 0
     },
     "flagnote-13-leader_dest": {
-      "x": 0.1974,
-      "y": -0.4205,
+      "x": 0.2793,
+      "y": -0.315,
       "rotation": 0
     },
     "flagnote-13": {
-      "x": -1.3763,
+      "x": -1.3999,
       "y": -1.9942,
       "rotation": 0
     },
     "flagnote-14-leader_dest": {
-      "x": 0.3751,
-      "y": -0.4205,
+      "x": 0.4125,
+      "y": -0.315,
       "rotation": 0
     },
     "flagnote-14": {
-      "x": -0.7922,
+      "x": -0.8158,
       "y": -2.4424,
       "rotation": 0
     },
     "flagnote-15-leader_dest": {
-      "x": 0.5052,
-      "y": -0.4205,
+      "x": 0.5099,
+      "y": -0.315,
       "rotation": 0
     },
     "flagnote-15": {
-      "x": -0.112,
+      "x": -0.1356,
       "y": -2.7241,
       "rotation": 0
     },
     "flagnote-16-leader_dest": {
-      "x": 0.6179,
-      "y": -0.4205,
+      "x": 0.5943,
+      "y": -0.315,
       "rotation": 0
     },
     "flagnote-16": {
-      "x": 0.6179,
+      "x": 0.5943,
       "y": -2.8202,
       "rotation": 0
     }
