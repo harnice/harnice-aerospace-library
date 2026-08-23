@@ -26,118 +26,98 @@
       "rotation": 45
     },
     "leader_center": {
-      "x": 0.936,
-      "y": 0.1618,
+      "x": 0.9191,
+      "y": 0.1937,
       "rotation": 0
     },
     "flagnote-1-leader_dest": {
-      "x": 1.1575,
-      "y": -0.6646,
+      "x": 1.1479,
+      "y": -0.66,
       "rotation": 0
     },
     "flagnote-1": {
-      "x": 1.8551,
-      "y": -3.2682,
+      "x": 1.7492,
+      "y": -2.9043,
       "rotation": 0
     },
     "flagnote-2-leader_dest": {
-      "x": 0.936,
-      "y": -0.7538,
+      "x": 0.9191,
+      "y": -0.66,
       "rotation": 0
     },
     "flagnote-2": {
-      "x": 0.936,
-      "y": -3.3892,
+      "x": 0.9191,
+      "y": -3.0136,
       "rotation": 0
     },
     "flagnote-3-leader_dest": {
-      "x": 1.3456,
-      "y": -0.5477,
+      "x": 1.3613,
+      "y": -0.5721,
       "rotation": 0
     },
     "flagnote-3": {
-      "x": 2.7115,
-      "y": -2.9134,
+      "x": 2.5228,
+      "y": -2.5839,
       "rotation": 0
     },
     "flagnote-4-leader_dest": {
-      "x": 0.6992,
-      "y": -0.7218,
+      "x": 0.6904,
+      "y": -0.66,
       "rotation": 0
     },
     "flagnote-4": {
-      "x": 0.0169,
-      "y": -3.2682,
+      "x": 0.089,
+      "y": -2.9043,
       "rotation": 0
     },
     "flagnote-5-leader_dest": {
-      "x": 1.5305,
-      "y": -0.4327,
+      "x": 1.5231,
+      "y": -0.4103,
       "rotation": 0
     },
     "flagnote-5": {
-      "x": 3.4469,
-      "y": -2.3491,
+      "x": 3.187,
+      "y": -2.0742,
       "rotation": 0
     },
     "flagnote-6-leader_dest": {
-      "x": 0.4456,
-      "y": -0.6876,
+      "x": 0.4262,
+      "y": -0.66,
       "rotation": 0
     },
     "flagnote-6": {
-      "x": -0.8395,
-      "y": -2.9134,
+      "x": -0.6846,
+      "y": -2.5839,
       "rotation": 0
     },
     "flagnote-7-leader_dest": {
-      "x": 1.7401,
-      "y": -0.3024,
+      "x": 1.6849,
+      "y": -0.2484,
       "rotation": 0
     },
     "flagnote-7": {
-      "x": 4.0113,
-      "y": -1.6137,
+      "x": 3.6967,
+      "y": -1.41,
       "rotation": 0
     },
     "flagnote-8-leader_dest": {
-      "x": 0.1294,
-      "y": -0.6448,
+      "x": 0.0654,
+      "y": -0.66,
       "rotation": 0
     },
     "flagnote-8": {
-      "x": -1.5749,
-      "y": -2.3491,
+      "x": -1.3488,
+      "y": -2.0742,
       "rotation": 0
     },
     "flagnote-9-leader_dest": {
-      "x": 2.0198,
-      "y": -0.1286,
+      "x": 1.8718,
+      "y": -0.0616,
       "rotation": 0
     },
     "flagnote-9": {
-      "x": 4.366,
-      "y": -0.7572,
-      "rotation": 0
-    },
-    "flagnote-10-leader_dest": {
-      "x": -0.3491,
-      "y": -0.5801,
-      "rotation": 0
-    },
-    "flagnote-10": {
-      "x": -2.1392,
-      "y": -1.6137,
-      "rotation": 0
-    },
-    "flagnote-11-leader_dest": {
-      "x": 2.487,
-      "y": 0.1618,
-      "rotation": 0
-    },
-    "flagnote-11": {
-      "x": 4.487,
-      "y": 0.1618,
+      "x": 4.0172,
+      "y": -0.6364,
       "rotation": 0
     }
   }

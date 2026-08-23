@@ -26,167 +26,167 @@
       "rotation": 0
     },
     "leader_center": {
-      "x": 0.6126,
-      "y": 0.0,
+      "x": 0.5896,
+      "y": -0.0,
       "rotation": 0
     },
     "flagnote-1-leader_dest": {
-      "x": 0.6126,
-      "y": 0.5175,
+      "x": 0.5896,
+      "y": 0.41,
       "rotation": 0
     },
     "flagnote-1": {
-      "x": 0.6126,
+      "x": 0.5896,
       "y": 2.997,
       "rotation": 0
     },
     "flagnote-2-leader_dest": {
-      "x": 0.7512,
-      "y": 0.5175,
+      "x": 0.6994,
+      "y": 0.41,
       "rotation": 0
     },
     "flagnote-2": {
-      "x": 1.3883,
+      "x": 1.3652,
       "y": 2.8949,
       "rotation": 0
     },
     "flagnote-3-leader_dest": {
-      "x": 0.4739,
-      "y": 0.5175,
+      "x": 0.4797,
+      "y": 0.41,
       "rotation": 0
     },
     "flagnote-3": {
-      "x": -0.1631,
+      "x": -0.1861,
       "y": 2.8949,
       "rotation": 0
     },
     "flagnote-4-leader_dest": {
-      "x": 1.0196,
+      "x": 0.9966,
       "y": 0.705,
       "rotation": 0
     },
     "flagnote-4": {
-      "x": 2.1111,
+      "x": 2.0881,
       "y": 2.5955,
       "rotation": 0
     },
     "flagnote-5-leader_dest": {
-      "x": 0.3138,
-      "y": 0.5175,
+      "x": 0.3528,
+      "y": 0.41,
       "rotation": 0
     },
     "flagnote-5": {
-      "x": -0.8859,
+      "x": -0.909,
       "y": 2.5955,
       "rotation": 0
     },
     "flagnote-6-leader_dest": {
-      "x": 1.3176,
+      "x": 1.2946,
       "y": 0.705,
       "rotation": 0
     },
     "flagnote-6": {
-      "x": 2.7318,
+      "x": 2.7088,
       "y": 2.1192,
       "rotation": 0
     },
     "flagnote-7-leader_dest": {
-      "x": 0.131,
-      "y": 0.4816,
+      "x": 0.1796,
+      "y": 0.41,
       "rotation": 0
     },
     "flagnote-7": {
-      "x": -1.5066,
+      "x": -1.5297,
       "y": 2.1192,
       "rotation": 0
     },
     "flagnote-8-leader_dest": {
-      "x": 1.3176,
+      "x": 1.2946,
       "y": -0.705,
       "rotation": 0
     },
     "flagnote-8": {
-      "x": 2.7318,
+      "x": 2.7088,
       "y": -2.1192,
       "rotation": 0
     },
     "flagnote-9-leader_dest": {
-      "x": 0.0136,
-      "y": 0.3458,
+      "x": -0.1206,
+      "y": 0.41,
       "rotation": 0
     },
     "flagnote-9": {
-      "x": -1.9829,
+      "x": -2.0059,
       "y": 1.4985,
       "rotation": 0
     },
     "flagnote-10-leader_dest": {
-      "x": 1.0196,
+      "x": 0.9966,
       "y": -0.705,
       "rotation": 0
     },
     "flagnote-10": {
-      "x": 2.1111,
+      "x": 2.0881,
       "y": -2.5955,
       "rotation": 0
     },
     "flagnote-11-leader_dest": {
-      "x": 0.0136,
-      "y": -0.3458,
+      "x": -0.1206,
+      "y": -0.41,
       "rotation": 0
     },
     "flagnote-11": {
-      "x": -1.9829,
+      "x": -2.0059,
       "y": -1.4985,
       "rotation": 0
     },
     "flagnote-12-leader_dest": {
-      "x": 0.7512,
-      "y": -0.5175,
+      "x": 0.6994,
+      "y": -0.41,
       "rotation": 0
     },
     "flagnote-12": {
-      "x": 1.3883,
+      "x": 1.3652,
       "y": -2.8949,
       "rotation": 0
     },
     "flagnote-13-leader_dest": {
-      "x": 0.131,
-      "y": -0.4816,
+      "x": 0.1796,
+      "y": -0.41,
       "rotation": 0
     },
     "flagnote-13": {
-      "x": -1.5066,
+      "x": -1.5297,
       "y": -2.1192,
       "rotation": 0
     },
     "flagnote-14-leader_dest": {
-      "x": 0.3138,
-      "y": -0.5175,
+      "x": 0.3528,
+      "y": -0.41,
       "rotation": 0
     },
     "flagnote-14": {
-      "x": -0.8859,
+      "x": -0.909,
       "y": -2.5955,
       "rotation": 0
     },
     "flagnote-15-leader_dest": {
-      "x": 0.4739,
-      "y": -0.5175,
+      "x": 0.4797,
+      "y": -0.41,
       "rotation": 0
     },
     "flagnote-15": {
-      "x": -0.1631,
+      "x": -0.1861,
       "y": -2.8949,
       "rotation": 0
     },
     "flagnote-16-leader_dest": {
-      "x": 0.6126,
-      "y": -0.5175,
+      "x": 0.5896,
+      "y": -0.41,
       "rotation": 0
     },
     "flagnote-16": {
-      "x": 0.6126,
+      "x": 0.5896,
       "y": -2.997,
       "rotation": 0
     }
