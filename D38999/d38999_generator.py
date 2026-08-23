@@ -2635,44 +2635,61 @@ def build_part(part_number, rev_dir):
         os.chdir(cwd)
 
 
+def make_part_number(part_configuration):
+    return (
+        f"D38999_{part_configuration['shell_type']}"
+        f"{part_configuration['finish']}"
+        f"{part_configuration['insert_arrangement']}"
+        f"{part_configuration['contact_type']}"
+        f"{part_configuration['key']}"
+    )
+
+
+def iter_part_configurations(shell_types=None, contact_types=None):
+    if shell_types is None:
+        shell_types = ["24", "26"]
+    if contact_types is None:
+        contact_types = ["P", "S"]
+    for shell_type in shell_types:
+        for finish in ["F", "K", "W", "Z"]:
+            for insert_arrangement in INSERT_ARRANGEMENT_CODES:
+                for contact_type in contact_types:
+                    for key in ["N", "A", "B", "C"]:
+                        yield {
+                            "shell_type": shell_type,
+                            "finish": finish,
+                            "insert_arrangement": insert_arrangement,
+                            "contact_type": contact_type,
+                            "key": key,
+                        }
+
+
 def main(
     step_only=False,
     svg_only=False,
     shell_types=None,
     contact_types=None,
     use_cli=False,
+    dry_run=False,
 ):
     state.set_rev(REVISION)
     state.set_project_type("part")
 
+    part_configurations = list(
+        iter_part_configurations(shell_types=shell_types, contact_types=contact_types)
+    )
+    total = len(part_configurations)
+
+    if dry_run:
+        print(f"{total} legal D38999 configurations in the permutation space.")
+        return
+
     if not (step_only or svg_only):
         cache_run_constant_lookups()
 
-    if shell_types is None:
-        shell_types = ["24", "26"]
-    if contact_types is None:
-        contact_types = ["P", "S"]
-
-    part_configurations = []
-    for shell_type in shell_types:
-        for finish in ["F", "K", "W", "Z"]:
-            for insert_arrangement in INSERT_ARRANGEMENT_CODES:
-                for contact_type in contact_types:
-                    for key in ["N", "A", "B", "C"]:
-                        part_configurations.append(
-                            {
-                                "shell_type": shell_type,
-                                "finish": finish,
-                                "insert_arrangement": insert_arrangement,
-                                "contact_type": contact_type,
-                                "key": key,
-                            }
-                        )
-
-    total = len(part_configurations)
     for i, part_configuration in enumerate(part_configurations, start=1):
         # GENERATE THE PART NUMBER
-        part_number = f"D38999_{part_configuration['shell_type']}{part_configuration['finish']}{part_configuration['insert_arrangement']}{part_configuration['contact_type']}{part_configuration['key']}"
+        part_number = make_part_number(part_configuration)
         print("Preparing part number: ", part_number)
 
         # MAKE THE PART FOLDER
@@ -2782,20 +2799,4 @@ def main(
     print("Finished rendering all parts in family.")
 
 if __name__ == "__main__":
-    shell_types = ["24", "26"]
-    if "--24-only" in sys.argv:
-        shell_types = ["24"]
-    elif "--26-only" in sys.argv:
-        shell_types = ["26"]
-    contact_types = ["P", "S"]
-    if "--pins-only" in sys.argv:
-        contact_types = ["P"]
-    elif "--sockets-only" in sys.argv:
-        contact_types = ["S"]
-    main(
-        step_only="--step-only" in sys.argv,
-        svg_only="--svg-only" in sys.argv,
-        shell_types=shell_types,
-        contact_types=contact_types,
-        use_cli="--cli" in sys.argv,
-    )
+    main()

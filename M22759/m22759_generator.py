@@ -11,7 +11,6 @@ This file only writes folders. Do not import it from a harness.
         {PN}-rev1-conductor_list.tsv
 """
 
-import argparse
 import csv
 import json
 import os
@@ -239,21 +238,6 @@ def _progress_bar(done, total, width=25):
     return "[ " + " ".join(cells) + f" ] ({pct}%)"
 
 
-def iter_filtered_configurations(filters=None):
-    filters = filters or {}
-    slashes = set(filters["slash"]) if filters.get("slash") else None
-    gauges = set(filters["gauge"]) if filters.get("gauge") else None
-    colors = set(filters["color"]) if filters.get("color") else None
-    for cfg in M22759.iter_part_configurations():
-        if slashes is not None and cfg["slash"] not in slashes:
-            continue
-        if gauges is not None and cfg["gauge"] not in gauges:
-            continue
-        if colors is not None and cfg["color"] not in colors:
-            continue
-        yield cfg
-
-
 def main(
     configurations=None,
     no_build=False,
@@ -318,98 +302,5 @@ def main(
     write_family_csv(list(M22759.iter_part_configurations()), family_dir)
 
 
-def parse_args(argv):
-    parser = argparse.ArgumentParser(
-        description="Generate MIL-DTL-22759 hookup wire as Harnice cable products."
-    )
-    parser.add_argument(
-        "--dry-run",
-        action="store_true",
-        help="Report how many configurations would be generated, then exit",
-    )
-    parser.add_argument(
-        "--no-build",
-        action="store_true",
-        help="Write attributes.json and revision history without the conductor list",
-    )
-    parser.add_argument(
-        "--csv-only",
-        action="store_true",
-        help="Rewrite M22759.csv from the full permutation space without touching part folders",
-    )
-    parser.add_argument(
-        "--slash",
-        nargs="+",
-        type=int,
-        metavar="N",
-        help=f"Limit to these slash sheets (default {M22759.list_slash_sheets()})",
-    )
-    parser.add_argument(
-        "--gauge",
-        nargs="+",
-        type=int,
-        metavar="AWG",
-        help="Limit to these conductor sizes",
-    )
-    parser.add_argument(
-        "--color",
-        nargs="+",
-        metavar="CODE",
-        help="Limit to these MIL-STD-681 color codes (e.g. 9 0 90)",
-    )
-    parser.add_argument(
-        "--solid-only",
-        action="store_true",
-        help="Emit only the ten solid colors (0-9), skip white-base stripes",
-    )
-    parser.add_argument(
-        "--part-number",
-        nargs="+",
-        metavar="PN",
-        help="Generate only these part numbers (library or official spelling)",
-    )
-    return parser.parse_args(argv)
-
-
-def main_from_args(argv=None):
-    args = parse_args(argv if argv is not None else sys.argv[1:])
-    colors = list(args.color) if args.color else None
-    if args.solid_only:
-        solids = [code for code in M22759.LIBRARY_COLOR_CODES if len(code) == 1]
-        colors = solids if colors is None else [c for c in colors if c in solids]
-    filters = {
-        "slash": args.slash,
-        "gauge": args.gauge,
-        "color": colors,
-    }
-    configurations = list(iter_filtered_configurations(filters))
-
-    if args.part_number:
-        wanted = set()
-        for raw in args.part_number:
-            parsed = M22759.parse_part_number(raw)
-            wanted.add(M22759.make_part_number(parsed))
-        configurations = [
-            cfg
-            for cfg in configurations
-            if M22759.make_part_number(cfg) in wanted
-        ]
-        have = {M22759.make_part_number(cfg) for cfg in configurations}
-        missing = wanted - have
-        if missing:
-            raise SystemExit(
-                "Not legal M22759 configurations in the permutation space: "
-                + ", ".join(sorted(missing))
-            )
-
-    main(
-        configurations=configurations,
-        no_build=args.no_build,
-        dry_run=args.dry_run,
-        csv_only=args.csv_only,
-        build=not args.no_build,
-    )
-
-
 if __name__ == "__main__":
-    main_from_args()
+    main()

@@ -1024,12 +1024,16 @@ def _progress_bar(done, total, width=25):
     return "[ " + " ".join(cells) + f" ] ({pct}%)"
 
 
-def main(step_only=False):
+def main(step_only=False, dry_run=False):
     state.set_rev(REVISION)
     state.set_project_type("part")
 
     configs = list(iter_part_configurations())
     total = len(configs)
+
+    if dry_run:
+        print(f"{total} legal Mighty Mouse configurations in the permutation space.")
+        return
 
     for i, part_configuration in enumerate(configs, start=1):
         part_number = make_part_number(
@@ -1134,4 +1138,4 @@ def main(step_only=False):
 
 
 if __name__ == "__main__":
-    main(step_only="--step-only" in sys.argv)
+    main()

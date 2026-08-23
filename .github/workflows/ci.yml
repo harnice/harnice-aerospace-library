@@ -1,0 +1,28 @@
+name: ci
+
+# Disabled: a full generate_all_in_repo run is too slow for PR/main CI.
+# The job is kept; run it by hand from Actions if needed.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  generate:
+    name: check family catalogs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out aerospace library
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install Harnice
+        run: pip install "git+https://github.com/harnice/Harnice.git"
+
+      - name: Require committed SKUs to match the generators
+        run: python check.py

@@ -739,9 +739,14 @@ def make_part(part_configuration):
     return part_number
 
 
-def main(step_only=False, csv_only=False):
+def main(step_only=False, csv_only=False, dry_run=False):
     state.set_rev(REVISION)
     state.set_project_type("part")
+
+    if dry_run:
+        total = sum(1 for _ in iter_part_configurations())
+        print(f"{total} legal thermocouple configurations in the permutation space.")
+        return
 
     csv_path = write_catalog_csv()
     print(f"Wrote catalog: {csv_path}")
@@ -790,7 +795,4 @@ def main(step_only=False, csv_only=False):
 
 
 if __name__ == "__main__":
-    main(
-        step_only="--step-only" in sys.argv,
-        csv_only="--csv-only" in sys.argv,
-    )
+    main()

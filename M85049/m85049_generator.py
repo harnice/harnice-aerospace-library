@@ -1635,12 +1635,16 @@ def _write_drawing_svg(svg_path, svg_content, csys_children=None, preserve_csys=
         f.write(svg_content)
 
 
-def main(step_only=False, use_cli=False, svg_only=False):
+def main(step_only=False, use_cli=False, svg_only=False, dry_run=False):
     state.set_rev(REVISION)
     state.set_project_type("part")
 
     configs = list(iter_part_configurations())
     total = len(configs)
+
+    if dry_run:
+        print(f"{total} legal M85049 configurations in the permutation space.")
+        return
 
     if not step_only and not svg_only:
         cache_run_constant_lookups()
@@ -1771,4 +1775,5 @@ if __name__ == "__main__":
         step_only="--step-only" in sys.argv,
         use_cli="--cli" in sys.argv,
         svg_only="--svg-only" in sys.argv,
+        dry_run="--dry-run" in sys.argv,
     )

@@ -1,4 +1,3 @@
-import argparse
 import csv
 import json
 import math
@@ -1479,90 +1478,5 @@ def main(configurations=None, no_build=False, dry_run=False, use_cli=False, csv_
     write_family_csv(list(iter_cable_configurations()), family_dir)
 
 
-def parse_args(argv):
-    parser = argparse.ArgumentParser(
-        description="Generate MIL-DTL-27500 cables as harnice cable project types."
-    )
-    parser.add_argument(
-        "--dry-run",
-        action="store_true",
-        help="Report how many configurations would be generated, then exit",
-    )
-    parser.add_argument(
-        "--no-build",
-        action="store_true",
-        help="Write attributes.json and revision history without building the conductor list",
-    )
-    parser.add_argument(
-        "--csv-only",
-        action="store_true",
-        help="Rewrite M27500.csv from the full permutation space without touching part folders",
-    )
-    parser.add_argument(
-        "--cli",
-        action="store_true",
-        help="Build by spawning `harnice -b` per part instead of building in process (much slower)",
-    )
-    parser.add_argument(
-        "--basic-wire",
-        nargs="+",
-        metavar="SYMBOL",
-        help=f"Limit to these Table I symbols (default all of {', '.join(PERMUTATIONS['basic_wire'])})",
-    )
-    parser.add_argument(
-        "--gauge",
-        nargs="+",
-        type=int,
-        metavar="AWG",
-        help="Limit to these conductor sizes",
-    )
-    parser.add_argument(
-        "--conductors",
-        nargs="+",
-        type=int,
-        metavar="N",
-        help="Limit to these conductor counts",
-    )
-    parser.add_argument(
-        "--part-number",
-        nargs="+",
-        metavar="PN",
-        help="Generate only these part numbers (must be legal configurations)",
-    )
-    return parser.parse_args(argv)
-
-
-def main_from_args(argv=None):
-    args = parse_args(argv if argv is not None else sys.argv[1:])
-    filters = {
-        "basic_wire": args.basic_wire,
-        "gauge": args.gauge,
-        "conductors": args.conductors,
-    }
-    configurations = list(iter_cable_configurations(filters=filters))
-
-    if args.part_number:
-        wanted = set(args.part_number)
-        configurations = [
-            configuration
-            for configuration in configurations
-            if configuration_part_number(configuration) in wanted
-        ]
-        missing = wanted - {configuration_part_number(c) for c in configurations}
-        if missing:
-            raise SystemExit(
-                "Not legal MIL-DTL-27500 configurations in the permutation space: "
-                + ", ".join(sorted(missing))
-            )
-
-    main(
-        configurations=configurations,
-        no_build=args.no_build,
-        dry_run=args.dry_run,
-        use_cli=args.cli,
-        csv_only=args.csv_only,
-    )
-
-
 if __name__ == "__main__":
-    main_from_args()
+    main()
