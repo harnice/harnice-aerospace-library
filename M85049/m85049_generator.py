@@ -1487,7 +1487,7 @@ def compile_part_attributes(part_configuration):
 
 
 def make_part_number(basic, detent, shell_size, finish, entry_size):
-    # Matches harness example style: M85049-90_9Z03 / M85049-88_N17P02
+    # Matches harness example style: M85049-90_9Z03_A / M85049-88_N17P02_A
     detent_code = detent  # "" or "N"
     return f"M85049-{basic}_{detent_code}{shell_size}{finish}{entry_size}"
 

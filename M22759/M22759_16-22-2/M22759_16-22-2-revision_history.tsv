@@ -1,2 +1,0 @@
-project_type	mfg	pn	desc	rev	status	releaseticket	library_repo	library_subpath	datestarted	datemodified	datereleased	git_hash_of_harnice_src	drawnby	checkedby	revisionupdates	affectedinstances
-cable	mil spec	M22759_16-22-2	CABLE, HOOKUP WIRE, MIL-DTL-22759/16, 22 AWG, 19X34 TIN-COATED COPPER, EXTRUDED ETFE, MEDIUM WALL, 600 V, 150 C, RED	1			https://github.com/harnice/harnice-aerospace-library	M22759	8/22/26	8/22/26		78173452481c922b3bd6f7b788169685f932d5d4	K SHUTT			

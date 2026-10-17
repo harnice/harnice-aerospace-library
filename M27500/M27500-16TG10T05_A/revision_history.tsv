@@ -1,0 +1,2 @@
+project_type	mfg	pn	desc	referenced_design	status	releaseticket	library_repo	library_subpath	source_part_number	source_lib_repo	source_subpath	source_refdes	datestarted	datemodified	datereleased	git_hash_of_harnice_src	drawnby	checkedby	revisionupdates	affectedinstances	last_build
+cable	mil spec	M27500-16TG10T05_A					https://github.com/harnice/harnice-aerospace-library	M27500					8/17/26	8/21/26		9137c00e30287364715836d2729365de6ff564e3	K SHUTT				

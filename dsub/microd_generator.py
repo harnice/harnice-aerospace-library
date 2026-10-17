@@ -366,7 +366,7 @@ def list_shell_sizes() -> list:
 #   e.g. M83513/01-AN
 # Official PIN, pigtail:     M83513/{slash}-{insert}{wire}{finish}
 #   e.g. M83513/03-A01N
-# Library PN replaces the spec slash with underscore: M83513_01-AN
+# Library PN replaces the spec slash with underscore: M83513_01-AN_A
 #
 #   /01 = plug, pin contacts, solder cup, metal shell
 #   /02 = receptacle, socket contacts, solder cup, metal shell

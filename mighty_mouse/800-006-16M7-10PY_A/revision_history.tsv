@@ -1,0 +1,2 @@
+project_type	mfg	pn	desc	referenced_design	status	releaseticket	library_repo	library_subpath	source_part_number	source_lib_repo	source_subpath	source_refdes	datestarted	datemodified	datereleased	git_hash_of_harnice_src	drawnby	checkedby	revisionupdates	affectedinstances	last_build
+part	Glenair	800-006-16M7-10PY_A					https://github.com/harnice/harnice-aerospace-library						8/16/26	8/17/26		87be3258d0804d506b826969d34230216e56bd9f	K SHUTT				

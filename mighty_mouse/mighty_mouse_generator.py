@@ -992,7 +992,7 @@ def compile_part_attributes(part_configuration):
 
 
 def make_part_number(shell_style, finish, insert_arrangement, contact_type, key):
-    # Glenair sample: 800-006-06M6-7PN
+    # Glenair sample: 800-006-06M6-7PN_A
     return f"800-006-{shell_style}{finish}{insert_arrangement}{contact_type}{key}"
 
 

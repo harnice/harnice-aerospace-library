@@ -1,2 +1,0 @@
-project_type	mfg	pn	desc	rev	status	releaseticket	library_repo	library_subpath	datestarted	datemodified	datereleased	git_hash_of_harnice_src	drawnby	checkedby	revisionupdates	affectedinstances
-cable	mil spec	M22759_33-24-3	CABLE, HOOKUP WIRE, MIL-DTL-22759/33, 24 AWG, 19X36 SILVER-COATED HIGH-STRENGTH COPPER ALLOY, CROSSLINKED MODIFIED ETFE, 600 V, 200 C, ORANGE	1			https://github.com/harnice/harnice-aerospace-library	M22759/	8/22/26	8/22/26		24c583b2a1036bf0a3a4c832c5ac5a4fc2d00fa4	K SHUTT			

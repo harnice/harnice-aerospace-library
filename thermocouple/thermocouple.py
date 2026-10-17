@@ -48,12 +48,12 @@ def choose_part(tc_type, gender="M", return_divider=None):
       F / female / jack / socket
 
     return_divider:
-      Default library PNs use a filesystem-safe code (OST-RS-M).
+      Default library PNs use a filesystem-safe code (OST-RS-M_A).
       Pass "/" to return the Omega catalog PIN (OST-R/S-M). Other types
       are unchanged.
 
     Returns:
-      Library part number string, e.g. OST-K-M.
+      Library part number string, e.g. OST-K-M_A.
     """
     code = _normalize_type(tc_type)
     sex = _normalize_gender(gender)
@@ -65,7 +65,7 @@ def find_mating_connector(part_number, override_gender=None, return_divider=None
     Given an OST part number, return the mating connector of the opposite
     gender, same thermocouple type.
 
-    Sample: OST-K-M  ->  OST-K-F
+    Sample: OST-K-M_A  ->  OST-K-F_A
     """
     parsed = parse_ost(part_number)
     gender = parsed["gender"]
@@ -84,7 +84,7 @@ def parse_ost(part_number):
     if not match:
         raise ValueError(
             f"Could not parse {part_number!r} as a standard thermocouple "
-            "connector. Expected OST-{{type}}-{{M|F}}, e.g. OST-K-M."
+            "connector. Expected OST-{{type}}-{{M|F}}, e.g. OST-K-M_A."
         )
     return {
         "series": "OST",

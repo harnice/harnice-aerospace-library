@@ -27,7 +27,7 @@ def parse_800_006(part_number):
         raise ValueError(
             f"Could not parse '{part_number}' as a Glenair 800-006 part number. "
             "Expected format: 800-006-{06|16}{finish}{shell}-{arrangement}{P|S}{N|X|Y|Z} "
-            "(e.g. 800-006-06M6-7PN)."
+            "(e.g. 800-006-06M6-7PN_A)."
         )
     return {
         "series": "800-006",
@@ -58,7 +58,7 @@ def find_mating_connector(
     800-010-07 (jam-nut receptacle with banding platform), opposite contact
     gender, same finish / insert / key.
 
-    Sample plug:      800-006-06M6-7PN
+    Sample plug:      800-006-06M6-7PN_A
     Default receptacle: 800-010-07M6-7SN
 
     Args:

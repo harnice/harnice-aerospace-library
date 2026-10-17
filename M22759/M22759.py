@@ -29,7 +29,7 @@ loop library_utils.pull()s every cable that has lib_repo set.
 
 Official PIN uses a slash (M22759/11-22-9). The library PN replaces that
 slash with an underscore so the folder name is filesystem-safe
-(M22759_11-22-9). Pass return_divider="/" to get the official spelling.
+(M22759_11-22-9_A). Pass return_divider="/" to get the official spelling.
 """
 
 import re
@@ -681,7 +681,7 @@ def parse_part_number(part_number):
         raise ValueError(
             f"Could not parse {part_number!r} as an M22759 part number. "
             "Expected M22759/{slash}-{AWG}-{color} "
-            "(e.g. M22759/11-22-9 or M22759_11-22-9)."
+            "(e.g. M22759/11-22-9 or M22759_11-22-9_A)."
         )
     slash = _require_slash_number(match.group("slash"))
     gauge = _normalize_gauge(match.group("gauge"))

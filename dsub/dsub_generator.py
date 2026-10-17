@@ -1203,7 +1203,7 @@ def list_variants():
 # Part family generator (same pipeline as D38999/d38999_generator.py)
 # ---------------------------------------------------------------------------
 # Official PIN: M24308/{slash}-{dash}{finish}  e.g. M24308/2-3F
-# Library PN:   M24308_{slash}-{dash}{finish}  e.g. M24308_2-3F
+# Library PN:   M24308_{slash}-{dash}{finish}  e.g. M24308_2-3F_A
 #   (slash after the spec name becomes underscore, same as D38999_)
 #
 #   slash 1 = solder-cup receptacle (socket), Class G

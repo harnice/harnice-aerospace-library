@@ -35,7 +35,7 @@ def choose_part(
       connector_type:   Termination family.
       density:          D-sub contact density. Omit when unambiguous.
       wire_type:        Micro-D pigtail code (01-16).
-      return_divider:   Default is underscore (M24308_2-3F). Pass "/" for
+      return_divider:   Default is underscore (M24308_2-3F_A). Pass "/" for
                         the official PIN (M24308/2-3F).
 
     Returns:

@@ -942,7 +942,7 @@ def cable_mass_source(symbol, shield_code, jacket_code):
 def make_part_number(identification, gauge, symbol, n_conductors, shield_code, jacket_code):
     """Compose a MIL-DTL-27500 part number.
 
-    e.g. M27500-22TG2T14: preferred identification, 22 AWG M22759/18
+    e.g. M27500-22TG2T14_A: preferred identification, 22 AWG M22759/18
     component wires, 2 conductors, round tin-coated copper shield, extruded
     white ETFE jacket.
     """

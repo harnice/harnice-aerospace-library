@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="400">
+<g id="M85049-88_N13G03_A-drawing-contents-start">
+<!-- Finish colors approximated from https://d38999.federalconnectors.com/ -->
+<!-- Knurl and section details from typical M85049/88 /89 /90 hardware -->
+<defs>
+<pattern id="m85049-88_n13g03-knurl-diamond" width="8" height="8" patternUnits="userSpaceOnUse">
+  <path d="M0,8 L8,0 M-2,2 L2,-2 M6,10 L10,6" stroke="#5E646A" stroke-width="0.85" fill="none"/>
+  <path d="M0,0 L8,8 M-2,6 L2,10 M6,-2 L10,2" stroke="#5E646A" stroke-width="0.85" fill="none"/>
+</pattern>
+<pattern id="m85049-88_n13g03-knurl-diamond-nut" width="8" height="8" patternUnits="userSpaceOnUse">
+  <path d="M0,8 L8,0 M-2,2 L2,-2 M6,10 L10,6" stroke="#5E646A" stroke-width="0.85" fill="none"/>
+  <path d="M0,0 L8,8 M-2,6 L2,10 M6,-2 L10,2" stroke="#5E646A" stroke-width="0.85" fill="none"/>
+</pattern>
+<pattern id="m85049-88_n13g03-knurl-straight" width="3.4" height="8" patternUnits="userSpaceOnUse">
+  <line x1="1.1" y1="0" x2="1.1" y2="8" stroke="#5E646A" stroke-width="1.15"/>
+</pattern>
+<pattern id="m85049-88_n13g03-knurl-straight-v" width="8" height="3.4" patternUnits="userSpaceOnUse">
+  <line x1="0" y1="1.1" x2="8" y2="1.1" stroke="#5E646A" stroke-width="1.15"/>
+</pattern>
+</defs>
+<polygon points="-33.60,-36.00 98.88,-36.00 98.88,-55.68 129.60,-55.68 129.60,55.68 98.88,55.68 98.88,36.00 -33.60,36.00" fill="#B4B9BE" stroke="#222222" stroke-width="1.5"/>
+<rect x="98.88" y="-55.68" width="30.72" height="111.36" fill="#7A8086" stroke="none"/>
+<rect x="98.88" y="-55.68" width="21.50" height="111.36" fill="url(#m85049-88_n13g03-knurl-straight)" stroke="none" opacity="0.55"/>
+<rect x="-29.57" y="-36.00" width="25.57" height="72.00" fill="url(#m85049-88_n13g03-knurl-diamond)" stroke="none" opacity="0.55"/>
+<rect x="-28.60" y="-33.12" width="1.40" height="66.24" fill="#555B61" stroke="none"/>
+<rect x="-25.40" y="-33.12" width="1.40" height="66.24" fill="#555B61" stroke="none"/>
+<rect x="-33.60" y="-19.80" width="4.00" height="39.60" fill="#555B61" stroke="none"/>
+<rect x="124.00" y="-25.26" width="1.60" height="50.51" fill="#C62828" stroke="none"/>
+<rect x="125.60" y="-23.39" width="4.00" height="46.77" fill="#555B61" stroke="none"/>
+<polygon points="-33.60,-36.00 98.88,-36.00 98.88,-55.68 129.60,-55.68 129.60,55.68 98.88,55.68 98.88,36.00 -33.60,36.00" fill="none" stroke="#222222" stroke-width="1.5"/>
+</g>
+<g id="M85049-88_N13G03_A-drawing-contents-end">
+</g>
+  <g id="output csys locations">
+    <g id="connector">
+      <circle cx="129.60" cy="-0.00" r="4" fill="black"/>
+      <line x1="129.60" y1="-0.00" x2="153.60" y2="-0.00" stroke="red" stroke-width="2"/>
+      <polygon points="153.60,-0.00 147.60,-3.00 147.60,3.00" fill="red"/>
+      <line x1="129.60" y1="-0.00" x2="129.60" y2="-24.00" stroke="green" stroke-width="2"/>
+      <polygon points="129.60,-24.00 126.60,-18.00 132.60,-18.00" fill="green"/>
+    </g>
+  </g>
+</svg>

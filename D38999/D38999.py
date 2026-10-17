@@ -169,7 +169,7 @@ def find_backshell(
 
     Part number format returned (matches M85049/ library):
       M85049-{88|89|90}_{N?}{shell}{finish}{entry}
-      e.g. M85049-88_17F03, M85049-90_9Z03
+      e.g. M85049-88_17F03_A, M85049-90_9Z03_A
 
     Args:
       part_number:          MIL-DTL-38999 part number (e.g. D38999/26FG16SN).
